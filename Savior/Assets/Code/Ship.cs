@@ -11,33 +11,33 @@ public class Ship : MonoBehaviour {
 
 	public float rotation;
 
-	public AngleHandler angleHandler;
+	//public AngleHandler angleHandler;
+	public TimeManagement tm;
+	public TimePowerHandler tph;
 
-	// Use this for initialization
 	void Start () {
-		angleHandler = new AngleHandler (rotation);
+		//angleHandler = new AngleHandler (rotation);
+		tm = new TimeManagement (1000);
 	}
-
-	/*public float normalizeAngle (float angle) {
-		while (angle < 0f || angle > 360f) {
-			if (angle < 0f)
-				angle += 360f;
-			if (angle > 360f)
-				angle -= 360f;
-		}
-		return angle;
-	}
-
-	public void rotate2D (float angle) {
-
-		transform.Rotate (new Vector3 (0f, 0f, normalizeAngle(angle - rotation)));
-
-		rotation = angle;
-
-	}*/
 	
-	// Update is called once per frame
 	void Update () {
+		
+		if (!Input.GetKey (KeyCode.Space)) {
+
+			tm.update (transform.position, transform.rotation);
+
+		} else if (tph.seconds > 0f) {
+
+			tm.ZAWARUDO (gameObject, tph.seconds);
+
+			cameraObject.transform.position = transform.position + new Vector3 (0f, 0f, -10f);
+
+			return;
+
+		}
+
+		cameraObject.transform.position = transform.position + new Vector3 (0f, 0f, -10f);
+
 
 		//movement
 		float baseX = (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A)) ? -1f : 0f;
@@ -49,12 +49,10 @@ public class Ship : MonoBehaviour {
 		GetComponent <Rigidbody2D> ().velocity = new Vector2 (baseX * speedScale, baseY * speedScale);
 
 		//rotation
-		//Vector3 mousePos = cameraObject.GetComponent<Camera>().ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, 0f));
+		transform.rotation = Quaternion.Euler (0f, 0f, Mathf.Rad2Deg * Mathf.Atan2(-Input.mousePosition.x + Screen.width/2f, Input.mousePosition.y- Screen.height/2f));
+			
 
-		cameraObject.transform.position = transform.position + new Vector3 (0f, 0f, -10f);
-		angleHandler.rotate2D (Mathf.Rad2Deg * Mathf.Atan2(-Input.mousePosition.x + Screen.width/2f, Input.mousePosition.y- Screen.height/2f), gameObject);
-
-		//Debug.Log ((Input.mousePosition.x - Screen.width/2f) + "\t" + (Input.mousePosition.y- Screen.height/2f));
+		//Debug.Log (tm.positions.Count);
 
 	}
 }

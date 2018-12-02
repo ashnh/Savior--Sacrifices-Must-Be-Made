@@ -55,6 +55,8 @@
      <Compile Include="Assets\Code\Bullet.cs" />
      <Compile Include="Assets\Code\Ship.cs" />
      <Compile Include="Assets\Code\ShipGun.cs" />
+     <Compile Include="Assets\Code\TimeManagement.cs" />
+     <Compile Include="Assets\Code\TimePowerHandler.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
