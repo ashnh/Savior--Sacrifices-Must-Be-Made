@@ -5,6 +5,24 @@ using AssemblyCSharp;
 
 public class Boss : MonoBehaviour {
 
+	public GameObject explosion;
+
+	public GameObject barrier1;
+	public GameObject barrier2;
+	public GameObject barrier3;
+
+	public Sprite s1;
+	public Sprite s2;
+	public Sprite s3;
+
+	public float timeOpen1;
+	public float timeOpen2;
+	public float timeOpen3;
+
+	public GameObject hitSpot1;
+	public GameObject hitSpot2;
+	public GameObject hitSpot3;
+
 	public GameObject spawn1;
 	public GameObject spawn2;
 	public GameObject spawn3;
@@ -62,6 +80,39 @@ public class Boss : MonoBehaviour {
 
 			timeSinceLastShot -= secondsBetweenShots;
 
+		}
+
+		if (barrier1 != null && Time.timeSinceLevelLoad > timeOpen1) {
+
+			Destroy (barrier1);
+			//
+
+		} 
+
+		if (barrier2 != null && Time.timeSinceLevelLoad > timeOpen2) {
+
+
+			Destroy (barrier2);
+			//
+
+		}
+
+		if (barrier3 != null && Time.timeSinceLevelLoad > timeOpen3) {
+
+
+			Destroy (barrier3);
+			//
+
+		}
+
+		if (hitSpot3 == null) {
+			GetComponent <SpriteRenderer> ().sprite = s3;
+			Instantiate (explosion, transform.position, transform.rotation);
+			Destroy (gameObject);
+		} else if (hitSpot2 == null) {
+			GetComponent <SpriteRenderer> ().sprite = s2;
+		} else if (hitSpot1 == null) {
+			GetComponent <SpriteRenderer> ().sprite = s1;
 		}
 
 	}

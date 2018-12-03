@@ -4,4 +4,34 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 7f080d3805ed8cb4b9d77393e0a08c3a
+  - enabled: 1
+    path: Assets/Scenes/game levels/Horizontal.unity
+    guid: 6793f60bec3b14a48bae13e1d6c93eb8
+  - enabled: 1
+    path: Assets/Scenes/moment levels/Decision 1.unity
+    guid: 9591803387ed93649a07ebd55bd9cab1
+  - enabled: 1
+    path: Assets/Scenes/game levels/Vertical.unity
+    guid: 00c4936f13d272b42976c1f2ffe20fa5
+  - enabled: 1
+    path: Assets/Scenes/moment levels/Decision 2.unity
+    guid: 258eac35da0697d4b913f75e06bcb962
+  - enabled: 1
+    path: Assets/Scenes/game levels/Combo.unity
+    guid: 9d69cb0245405e448b78e13774a28e12
+  - enabled: 1
+    path: Assets/Scenes/moment levels/Decision 3.unity
+    guid: d0acb37b060089c40b029df8120b6a3d
+  - enabled: 1
+    path: Assets/Scenes/game levels/final.unity
+    guid: 6fe1dbe362186824cab7dc25d6a457a9
+  - enabled: 1
+    path: Assets/Scenes/moment levels/Decision 4.unity
+    guid: 84fb7f45cc2f0a94a871653efcbf8206
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: e11f91f248e90594eb1efae3cf8bc60f

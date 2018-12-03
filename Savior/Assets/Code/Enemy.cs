@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour {
 
 	public bool spawned;
 
+	public GameObject explosion; 
+
 	public GameObject bulletTemplate;
 
 	public GameObject spawnPoint;
@@ -65,7 +67,7 @@ public class Enemy : MonoBehaviour {
 			GameObject bullet = (GameObject)Instantiate (bulletTemplate, spawnPoint.transform.position, bulletTemplate.transform.rotation);
 			bullet.GetComponent <Bullet> ().tph = this.tph;
 			bullet.GetComponent <Bullet> ().vectorAngle = Mathf.Rad2Deg * Quaternion.ToEulerAngles(spawnPoint.transform.rotation).z;
-			bullet.GetComponent <Bullet> ().addedSpeed = GetComponent<Rigidbody2D> ().velocity;
+			//bullet.GetComponent <Bullet> ().addedSpeed = GetComponent<Rigidbody2D> ().velocity;
 
 
 		} else if (timeSinceLastShot > adjustedTimer) {
@@ -75,6 +77,19 @@ public class Enemy : MonoBehaviour {
 		}
 
 
+
+	}
+
+	void OnTriggerEnter2D (Collider2D other) {
+
+		//Debug.Log ("asdf");
+
+		if (other.tag.Equals ("bullet")) {
+
+			Instantiate (explosion, transform.position, transform.rotation);
+			Destroy (gameObject);
+
+		}
 
 	}
 }
