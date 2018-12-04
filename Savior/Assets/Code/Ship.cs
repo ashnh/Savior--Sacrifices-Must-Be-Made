@@ -136,6 +136,9 @@ public class Ship : MonoBehaviour {
 				//Debug.Log (bullet.GetComponent <Bullet> ().tm.positions.Count);
 
 			}
+
+
+			PlayerPrefs.SetInt ("hp", hitPoints);
 				
 
 			cameraObject.transform.position = transform.position + new Vector3 (0f, 0f, -10f);
@@ -198,7 +201,6 @@ public class Ship : MonoBehaviour {
 		if (other.tag.Equals ("hazard") && !Input.GetKey (KeyCode.Space)) {
 			//Debug.Log ("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 			hitPoints--;
-			PlayerPrefs.SetInt ("hp", hitPoints);
 			if (hitPoints <= 0)
 				UnityEngine.SceneManagement.SceneManager.LoadScene (levelTo);
 
