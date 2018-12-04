@@ -18,6 +18,7 @@ public class EndScrene : MonoBehaviour {
 			PlayerPrefs.SetInt ("p", 1);
 			PlayerPrefs.SetInt ("e", 1);
 			PlayerPrefs.SetInt ("s", 1);
+			PlayerPrefs.SetInt ("hp", 4);
 
 		}
 	}

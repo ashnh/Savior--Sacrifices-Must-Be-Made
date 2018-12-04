@@ -2,16 +2,16 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Ship.cs">
     <Files>
-      <File FileName="Assets\Code\components\ShipGun.cs" Line="14" Column="31" />
-      <File FileName="Assets\Code\Enemy.cs" Line="49" Column="33" />
-      <File FileName="Assets\Code\Ship.cs" Line="51" Column="11" />
-      <File FileName="Assets\Code\components\Bullet.cs" Line="81" Column="12" />
-      <File FileName="Assets\Code\management\TimeManagement.cs" Line="95" Column="7" />
-      <File FileName="Assets\Code\management\LevelManagement.cs" Line="36" Column="4" />
-      <File FileName="Assets\Code\management\DecisionSpriteManager.cs" Line="98" Column="9" />
-      <File FileName="Assets\Code\EndScrene.cs" Line="29" Column="22" />
-      <File FileName="Assets\Code\components\Shield.cs" Line="7" Column="13" />
-      <File FileName="Assets\Code\management\GameFaces.cs" Line="43" Column="5" />
+      <File FileName="Assets\Code\components\ShipGun.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Ship.cs" Line="201" Column="41" />
+      <File FileName="Assets\Code\components\Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\management\TimeManagement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\management\LevelManagement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\management\DecisionSpriteManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\EndScrene.cs" Line="21" Column="33" />
+      <File FileName="Assets\Code\components\Shield.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\management\GameFaces.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 16008, y: 14042}
+  m_MinSize: {x: 687, y: 492}
+  m_MaxSize: {x: 16012, y: 14042}
   vertical: 0
-  controlID: 131
+  controlID: 128
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1372
     height: 947
-  m_MinSize: {x: 406, y: 492}
-  m_MaxSize: {x: 12006, y: 14042}
+  m_MinSize: {x: 410, y: 492}
+  m_MaxSize: {x: 12010, y: 14042}
   vertical: 1
-  controlID: 98
+  controlID: 129
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -155,10 +155,10 @@ MonoBehaviour:
     y: 0
     width: 1372
     height: 543
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 12006, y: 4021}
+  m_MinSize: {x: 410, y: 221}
+  m_MaxSize: {x: 12010, y: 4021}
   vertical: 0
-  controlID: 12
+  controlID: 130
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,8 +228,8 @@ MonoBehaviour:
     y: 0
     width: 589
     height: 543
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 104, y: 121}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -396,7 +396,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 603adfff443bdfff583cdfff663cdfff663ddfff5640dfff0841dffff843dfffb244dfffa247dfff5248dfff5c48dfffe050dfff9056dfff2c5cdffffe61dfff6c66dfff7671dfffac77dfffee82dfff66b9dfff70c9dffffccbdfff0407e0ff3607e0ff8e07e0ff0a18e0ff1e18e0ff7618e0ffe01de0ff0026e0ff862ce0ff4232e0ff8c3de0ffa448e0ffdc67e0ffc068e0ffd469e0ffe269e0ffe26ae0ffd26de0ff846ee0ff7471e0ff2e72e0ff1e75e0ffce75e0ffd875e0ffcc84e0ffa48be0ff369ee0ff56a9e0ffb2afe0ffe2c0e0ff6ccae0ff2af9e0ff3e01e1ff3e0ae1ff240be1ff3c0ce1ff300fe1ff3410e1ff2813e1ffde13e1ffd216e1ff9017e1ff861ae1ff461be1ff4e1be1ff0a91e1ff66cae1ff96cce1ffa8d2e1ffc0d3e1ffa2f2e1ffa20ce2ff8e26e2ffee2be2ffca34e2fff63ce2ffb47be5ff429ce5ff549ce5ffb09ee5ff72a1e5ff6ca7e5ff96abe5ff9aace5ff3eb8e7ffb6b8e7ffe0b8e7ff02b9e7ffd6c8e7ffa4c9e7ff5608e9ff3222e9fffe06ecff2411ecff7818ecff908aedffaed0f1ffcc10f2ff2811f2ff5211f2ff9411f2ff9e4bf3ff8e51f3ff1694f3ff1e94f3ffcceff3ff8cf1f3ff6af2f3ff8a2df4ff7e3af4ff06cff4ff26d6f4ff3a11f5ffe6c0f7ff0280f8ff487bfaff0ce6faff16e6faffc4b2fbff84b3fbffa0b4fbff9efbffff000000005a28000078350000eee20000a00e0100
+    m_ExpandedIDs: 602affff442bffff582cffff482fffff4830ffff3833ffffea33ffffda36ffff9437ffff863affff8a3affff943affff62d5ffff0ce3fffffcecffff6cefffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -415,7 +415,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Decision 4
+  - Horizontal
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -578,19 +578,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes/moment levels
+    - Assets/Scenes/game levels
   m_ViewMode: 1
   m_StartGridSize: 71
   m_LastFolders:
-  - Assets/Scenes/moment levels
+  - Assets/Scenes/game levels
   m_LastFoldersGridSize: 71
   m_LastProjectPath: C:\Unity\Savior--Sacrifices-Must-Be-Made\Savior
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 96700000
-    m_LastClickedID: 28822
-    m_ExpandedIDs: 0000000088270000c62700000028000000ca9a3bffffff7f
+    m_SelectedIDs: c6280000
+    m_LastClickedID: 10438
+    m_ExpandedIDs: 0000000096270000122800008828000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -618,7 +618,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000088270000
+    m_ExpandedIDs: 00000000962700001228000088280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

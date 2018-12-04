@@ -91,6 +91,9 @@ public class Ship : MonoBehaviour {
 	Dictionary <float, bulletValues> hitBullets;
 
 	void Start () {
+
+		hitPoints = PlayerPrefs.GetInt ("hp");
+
 		//angleHandler = new AngleHandler (rotation);
 		tm = new TimeManagement (1000);
 		hitBullets = new Dictionary<float, bulletValues> ();
@@ -195,6 +198,7 @@ public class Ship : MonoBehaviour {
 		if (other.tag.Equals ("hazard") && !Input.GetKey (KeyCode.Space)) {
 			//Debug.Log ("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 			hitPoints--;
+			PlayerPrefs.SetInt ("hp", hitPoints);
 			if (hitPoints <= 0)
 				UnityEngine.SceneManagement.SceneManager.LoadScene (levelTo);
 
